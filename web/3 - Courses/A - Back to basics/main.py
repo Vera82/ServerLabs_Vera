@@ -18,7 +18,9 @@ def main():
 def config():
     print("[+] Configuring server")
     config_routes()
+    print("[+] ...toutes configured")
     config_templates()
+    print("[+] ...templates configured")
     print("[+] ...done configuring server")
 #:
 
@@ -58,6 +60,8 @@ Options:
         reload = args['--reload'],
         reload_includes = ['*.pt']
     )
+#
+
 if __name__ == '__main__':
     main()
 else:

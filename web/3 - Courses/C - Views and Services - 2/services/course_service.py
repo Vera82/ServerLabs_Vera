@@ -45,7 +45,7 @@ def available_courses(count: int) -> List[Course]:
             schedule = 'Terças e Sextas, 10 às 13h',
             available_seats = 16,
         ),
-    ][count:]
+    ][:count]
     
 #:
 
@@ -87,7 +87,7 @@ def most_popular_courses(count: int) -> List[Course]:
             schedule = 'Terças e Sextas, 10 às 13h',
             available_seats = 16,
         ),
-    ][count:]
+    ][:count]
 #: 
 
 def get_course_by_id(course_id: int) -> Course | None: 

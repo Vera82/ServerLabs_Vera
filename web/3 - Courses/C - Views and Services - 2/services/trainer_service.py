@@ -40,5 +40,5 @@ def selected_trainers(count: int) -> List[Trainer]:
             instagram = 'https://instagram.com/osmello',
             linkedin = 'https://linkedin.com/prof_osmar',
         ),  
-    ][count:]
+    ][:count]
 #:    

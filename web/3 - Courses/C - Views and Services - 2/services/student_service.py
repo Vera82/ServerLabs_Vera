@@ -38,5 +38,5 @@ def get_testimonials(count: int) -> List[Testimonial]:
             user_occupation = 'Entrepreneur',
             text = 'Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.',
         ),
-        ][count:]
+        ][:count]
 #:

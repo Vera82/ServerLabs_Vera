@@ -75,13 +75,14 @@ A Web accessible FastAPI server that allow players to register/enroll
 for tournaments.
 
 Usage:
-  app.py [-c | -c -d] [-p PORT] [-h HOST_IP]
+  app.py [-c | -c -d] [-p PORT] [-h HOST_IP] [-r]
 
 Options:
   -p PORT, --port=PORT          Listen on this port [default: 8000]
   -c, --create-ddl              Crea    te datamodel in the database
   -d, --populate-db             Populate the DB with dummy for testing purposes
   -h HOST_IP, --host=HOST_IP    Listen on this IP address [default: 127.0.0.1]
+  -r, --reload                  Reload app
 """
     args = docopt(help_doc)
     create_ddl = args['--create-ddl']
@@ -97,7 +98,10 @@ Options:
         'app:app',
         port = int(args['--port']), 
         host = args['--host'],
-        reload = True,
+        reload = args['--reload'],
+        reload_includes=[
+            '*.css',
+        ]
     )
 #:
 

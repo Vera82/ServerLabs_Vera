@@ -32,8 +32,8 @@
                                             </div>
 
                                             <div class="form-outline mb-4">
-                                                <input type="date" name="date_of_birth" class="form-control form-control-lg" required
-                                                    value="${date_of_birth}" min="${min_date}" max="${max_date}">
+                                                <input type="date" name="birth_date" class="form-control form-control-lg" required
+                                                    value="${birth_date}" min="${min_date}" max="${max_date}">
                                                 <label class="form-label" for="form3Example3cg">Data de Nascimento</label>
                                             </div>
 
